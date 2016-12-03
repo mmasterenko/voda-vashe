@@ -1,0 +1,85 @@
+{% load staticfiles %}
+{% load bootstrap %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Главная | Вода - ваше здоровье</title>
+    <link href="{% static 'voda/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'voda/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'voda/css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'voda/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'voda/css/main.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="{% static 'voda/js/html5shiv.js' %}"></script>
+    <script src="{% static 'voda/js/respond.min.js' %}"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'voda/images/ico/favicon.ico' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'voda/images/ico/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'voda/images/ico/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'voda/images/ico/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'voda/images/ico/apple-touch-icon-57-precomposed.png' %}">
+</head><!--/head-->
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top dark-blue" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="color: #fff;" class="navbar-brand" href="index.html">
+                <img style="height: 45px" src="{% static 'voda/images2/logos/logo1.png' %}" alt="logo">
+                Вода - ваше здоровье !
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li {% class_active 'voda:home' %}><a href="{% url 'voda:home' %}">Главная</a></li>
+                    <li {% class_active 'voda:where' %}><a href="{% url 'voda:where' %}">Где купить</a></li>
+                    <li {% class_active 'voda:about' %}><a href="{% url 'voda:about' %}">О компании</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    {% block content %}
+    {% endblock %}
+
+    <footer id="footer" class="dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    &copy; 2016 <a target="_blank" href="#" title="odja"></a>.
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Адрес</h4>
+                    <address>
+                        <strong>ООО "Коммунэнергосервис"</strong><br>
+                        161300 г. Тотьма, ул. Ленина, д.58<br>
+                        <abbr title="Phone">Телефон:</abbr> 8 (921) 069-99-69
+                    </address>
+                </div> <!--/.col-md-3-->
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="{% url 'voda:home' %}">Главная</a></li>
+                        <li><a href="{% url 'voda:where' %}">Где купить</a></li>
+                        <li><a href="{% url 'voda:about' %}">О компании</a></li>
+                        <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="{% static 'voda/js/jquery.js' %}"></script>
+    <script src="{% static 'voda/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'voda/js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'voda/js/main.js' %}"></script>
+</body>
+</html>

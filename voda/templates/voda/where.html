@@ -1,0 +1,166 @@
+{% extends 'voda/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+    <section id="career" class="container">
+        <div class="center">
+            <h2>Как купить воду</h2>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel-group" id="accordion1">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-parent="#accordion1">
+                                        Отпуск воды за наличный расчет
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne1" class="panel">
+                                <ul class="list-group text-left">
+                                    <li class="list-group-item">1. Установить емкость. </li>
+                                    <li class="list-group-item">2. Внести деньги, после чего на экране отобразится внесенная Вами сумма.</li>
+                                    <li class="list-group-item">3. В течение <b>2 минут</b> нажать кнопку <b>«пуск/стоп»</b> для подачи воды. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--/#accordion1-->
+                </div><!--/.col-sm-4-->
+
+                <div class="col-sm-4">
+                    <div class="panel-group" id="accordion2">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-parent="#accordion2">
+                                        Отпуск воды по ключу
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne2" class="panel">
+                                <ul class="list-group text-left">
+                                    <li class="list-group-item">1. Установить емкость. </li>
+                                    <li class="list-group-item">2. Прислонить ключ к считывателю до появления на экране <b>«ПОДОЖДИТЕ»</b>, после чего ключ можно убрать.</li>
+                                    <li class="list-group-item">3. С момента появления на экране информации о номере ключа и остатке воды в литрах <b>в течение 4 секунд</b> нажать кнопку <b>«пуск/стоп»</b> для подачи воды. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--/#accordion1-->
+                </div><!--/.col-sm-4-->
+
+                <div class="col-sm-4">
+                    <div class="panel-group" id="accordion3">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-parent="#accordion3">
+                                        Пополнение баланса ключа
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne3" class="panel">
+                                <ul class="list-group text-left">
+                                    <li class="list-group-item">1. Внесите деньги. На экране отобразится внесенная Вами сумма. </li>
+                                    <li class="list-group-item">2. <b>В течение 2 минут</b> прислонить ключ к считывателю до появления на экране <b>«ПОДОЖДИТЕ»</b>, после чего ключ можно убрать. На экране отобразится информация о номере ключа и новый остаток воды в литрах.</li>
+                                    <li class="list-group-item"><b>ВНИМАНИЕ!</b> Вся сдача записывается в память ключа.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--/#accordion1-->
+                </div><!--/.col-sm-4-->
+            </div>
+        </div>
+
+        <h2 class="center">Особенности работы автомата</h2>
+
+        <p>1. Автомат <b>сдачи не дает</b></p>
+
+        <p>2. Автомат наливает воду по <b>5 литров</b>. Если Вам нужен другой объем, для остановки и подачи воды используйте кнопку <b>«пуск/стоп»</b></p>
+
+        <p>3. Интервал между раздачей воды при использовании ключа – <b>4 секунды</b>. Если Вы не успели <b>в течении 4 секунд</b> вновь нажать кнопку <b>«пуск/стоп»</b> после прекращения раздачи воды, то Вам необходимо повторно прислонить ключ к считывателю.</p>
+
+        <p>4. Прежде чем внести деньги в автомат посмотрите, пожалуйста, на информационный экран. Возможно отображение следующей информации:
+        <ul>
+            <li><b>«ВНЕСИТЕ НАЛИЧНЫЕ/ПРИСЛОНИТЕ КЛЮЧ»</b> - автомат полностью исправен.</li>
+            <li><b>«ТОЛЬКО НАЛИЧНЫЕ»</b> - нет соединения автомата с
+                интернетом. В такие моменты покупка воды по ключу, а также пополнение баланса ключа <b>невозможны!</b></li>
+            <li><b>«НЕТ ВОДЫ»</b> - покупка воды за наличный расчет и по
+                ключу <b>невозможны!</b></li>
+            <li>НЕТ ИНФОРМАЦИИ НА ЭКРАНЕ – отсутствует
+                напряжение в электросети. Покупка воды за наличный
+                расчет и по ключу, пополнение баланса ключа
+                <b>невозможны!</b></li>
+        </ul>
+        </p>
+
+        <p>5. Автомат <b>не принимает</b> мятые и рваные купюры, а также «юбилейные» монеты!
+            Если номинал внесенной Вами монеты не отобразился на экране, нажмите <b>«черную» кнопку</b> для возврата монеты и повторите попытку ее проброса в автомат!</p>
+
+        <hr>
+
+        <div class="row">
+            <p>Если у Вас возникли какие-либо сложности при использовании автомата, позвоните нам, мы с радостью Вам поможем! <b>Телефон:</b> 8-953-503-35-85, 2-10-40.</p>
+        </div>
+
+    </section>
+    <!-- /Career -->
+
+    <section id="where" class="container">
+        <h2 class="center">Расположение автоматов в г.Тотьма</h2>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-5">
+                <ul class="faq unstyled">
+                    <li>
+                        <a href="#">
+                            <span class="number">1</span>
+                            <p>г. Тотьма, ул. Луначарского, д.65</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="number">2</span>
+                            <p>г. Тотьма, ул. Садовая, д.37</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="number">3</span>
+                            <p>г. Тотьма, ул. Ворошилова, д.11</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="number">4</span>
+                            <p>г. Тотьма, ул. Механизаторов, д.2А</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="number">5</span>
+                            <p>г. Тотьма, пер. Северный, д.7А</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="number">6</span>
+                            <p>1-ый километр автодороги "Тотьма-Нюксеница - Великий Устюг"</p>
+                        </a>
+                    </li>
+                </ul>
+                <br>
+                <p>Режим работы - <b>КРУГЛОСУТОЧНО</b></p>
+            </div>
+            <div class="col-md-7">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=o9tylWjBUNOQapHHKSWyJv0voP40Tj6a&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+            </div>
+        </div>
+
+    </section><!--#faqs-->
+
+{% endblock %}
