@@ -1100,3 +1100,11 @@ ul.faq li > div h3 {
   max-width: 225px;
   max-height: 225px;
 }
+
+#delivery .panel img {
+  max-height: 228px;
+}
+
+#pricing .plan img {
+  max-height: 255px;
+}
