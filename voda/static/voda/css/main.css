@@ -1093,3 +1093,10 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
+/* custom css */
+
+.i225x225 {
+  max-width: 225px;
+  max-height: 225px;
+}
